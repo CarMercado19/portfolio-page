@@ -29,5 +29,5 @@ jobs:
 
       - name: Deploy to GitHub Pages
         env:
-          ROXAS_PAGE_TOKEN: ${{ secrets.PORTFOLIO_PAGE_TOKEN }}
+          PORTFOLIO_PAGE_TOKEN: ${{ secrets.PORTFOLIO_PAGE_TOKEN }}
         run: npm run deploy
