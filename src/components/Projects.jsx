@@ -1,20 +1,19 @@
 import React from 'react';
-import { TbExternalLink } from "react-icons/tb";
 import { motion } from 'framer-motion';
 
 const projects = [
   {
     id: 1,
-    title: "Crypto Screener Application",
-    description: "A powerful tool for tracking and analyzing cryptocurrency trends in real-time.",
-    image: "/assets/project1.png",
+    title: "Home Depot EE.UU.",
+    description: "As a contractor through Eviden, I helped develop and maintain internal web applications using React.js, Material UI, and Express.js. I focused on creating responsive UIs, integrating RESTful APIs, and managing deployments on Google Cloud Platform. I collaborated with cross-functional teams to ensure performance, scalability, and clean code practices.",
+    image: "/assets/home-depot-store.png",
     link: "#"
   },
   {
     id: 2,
-    title: "Stock Market Dashboard",
-    description: "An interactive dashboard to monitor stock prices and market trends efficiently.",
-    image: "/assets/project1.png",
+    title: "Appointments for crime reports",
+    description: "I participated in the development of web-based tools designed to streamline internal processes within a public institution. Using technologies like HTML, CSS, and JavaScript, I helped build and enhance user-facing modules that improved efficiency in daily tasks. The focus was on usability, performance optimization, and adapting existing systems to better serve operational needs in a government environment.",
+    image: "/assets/pgjeh.png",
     link: "#"
   }
 ];
@@ -53,9 +52,6 @@ export default function Projects() {
               <p className="font-light text-sm/6 lg:text-base text-[#71717A]">
                 {project.description}
               </p>
-              <a href={project.link} className="text-white mt-3 block" target="_blank" rel="noopener noreferrer">
-                <TbExternalLink size={23} />
-              </a>
             </div>
           </motion.div>
         ))}

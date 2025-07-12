@@ -1,42 +1,41 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
-import { FaJs, FaReact, FaNodeJs, FaPython, FaDatabase,FaJava } from "react-icons/fa";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { RiNextjsFill,RiTailwindCssFill } from "react-icons/ri";
-import { CgFigma } from "react-icons/cg";
+import { FaJs, FaReact, FaNodeJs, FaJenkins, FaGitAlt } from "react-icons/fa";
+import { SiExpress, SiGithubactions, SiJest, SiMaterialdesign  } from "react-icons/si";
+import { DiGoogleCloudPlatform } from "react-icons/di";
 
 export default function Skills() {
   const [skills] = useState([
     { id: 1, name: "JavaScript", icon: <FaJs size={50} /> },
     { id: 2, name: "React", icon: <FaReact size={50} /> },
     { id: 3, name: "Node.js", icon: <FaNodeJs size={50} /> },
-    { id: 4, name: "Python", icon: <FaPython size={50} /> },
-    { id: 5, name: "MongoDB", icon: <FaDatabase size={50} /> },
-    { id: 6, name: "Java", icon: <FaJava size={50} /> },
-    { id: 7, name: "Postgresql", icon: <BiLogoPostgresql size={50} /> },
-    { id: 8, name: "Next.js", icon: <RiNextjsFill size={50} /> },
-    { id: 9, name: "Tailwind", icon: <RiTailwindCssFill size={50} /> },
-    { id: 10, name: "Figma", icon: <CgFigma size={50} /> },
+    { id: 4, name: "Express.js", icon: <SiExpress size={50} /> },
+    { id: 5, name: "Git", icon: <FaGitAlt size={50} /> },
+    { id: 6, name: "GCP", icon: <DiGoogleCloudPlatform size={50} /> },
+    { id: 7, name: "Jenkins", icon: <FaJenkins size={50} /> },
+    { id: 8, name: "GitHub Actions", icon: <SiGithubactions size={50} /> },
+    { id: 9, name: "Material UI", icon: <SiMaterialdesign size={50} /> },
+    { id: 10, name: "Jest", icon: <SiJest size={50} /> },
   ]);
 
   const [experiences] = useState([
     {
       id: 1,
-      company: "Google",
-      role: "Lead Software Engineer",
-      period: "Nov 2019 - Present",
+      company: "Eviden",
+      role: "Software Engineer II",
+      period: "Nov 2021 - Apr 2025",
       description:
-        "Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience. Developed innovative solutions for Google's core search algorithms, optimizing search accuracy and user experience.",
-      logo: "/assets/google.svg",
+        "Worked as a contractor for HomeDepot, contributing as a full stack developer. I used technologies such as React for the frontend and Express.js for the backend, focusing on building and maintaining scalable and maintainable web applications. I brought strong problem-solving skills, clean code practices, and a collaborative mindset that helped streamline development processes and improve overall code quality within the team.",
+      logo: "/assets/eviden.png",
     },
     {
       id: 2,
-      company: "Youtube",
-      role: "Software Engineer",
-      period: "Jan 2017 - Oct 2019",
+      company: "Procuraduría General de Justicia del Estado de Hidalgo ",
+      role: "Web Developer",
+      period: "Jul - Oct 2021",
       description:
-        "At Youtube, I served as a  Software Engineer, focusing on the design and implementation of backend systems for the social media giant's dynamic platform. Working on projects that involved large-scale data processing and user engagement features, I leveraged my expertise to ensure seamless functionality and scalability.",
-      logo: "/assets/youtube.svg",
+        "Contributed as a web developer, working with technologies such as HTML, CSS and JavaScript. I focused on maintaining and improving internal systems to support administrative processes. My contributions included implementing cleaner, more efficient code and streamlining workflows, which helped improve usability and performance across several internal tools.",
+      logo: "/assets/scale.png",
     },
   ]);
 
@@ -55,11 +54,11 @@ export default function Skills() {
         </motion.h2>
 
         {/* Skill Cards */}
-        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 text-lg font-bold mt-7 lg:mt-16 w-full place-items-center gap-y-6 lg:gap-y-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-5 text-lg font-bold mt-7 lg:mt-16 w-full place-items-center gap-y-6 lg:gap-y-12 cursor-default">
           {skills.map((skill) => (
             <motion.div
               key={skill.id}
-              className="bg-white border-2 hover:bg-black hover:text-white transition-all cursor-pointer border-black rounded p-3 h-36 w-36 lg:h-44 lg:w-44 flex flex-col items-center justify-center gap-5"
+              className="bg-white border-2 hover:bg-black hover:text-white transition-all border-black rounded p-3 h-36 w-36 lg:h-44 lg:w-44 flex flex-col items-center justify-center gap-5"
               initial={{ opacity: 0, y: 5 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: "easeOut", delay: skill.id * 0.1 }}
@@ -90,7 +89,7 @@ export default function Skills() {
           {experiences.map((exp, index) => (
             <motion.div
               key={exp.id}
-              className="bg-black p-5 border border-[#D4D4D8] rounded-md hover:bg-[#27272A] transition-all cursor-pointer"
+              className="bg-black p-5 border border-[#D4D4D8] rounded-md hover:bg-[#27272A] transition-all cursor-default"
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{
