@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { TbDownload } from "react-icons/tb";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 import { VscTerminalCmd } from "react-icons/vsc";
-import Resume from "../../public/resume.pdf";
+import Resume from "../../public/Carlos_Roberto_Mercado_Diaz.pdf";
 
 export default function Navbar() {
   const [hasShadow, setHasShadow] = useState(false);
