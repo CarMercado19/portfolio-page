@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import AboutMeImg from "../../public/assets/about-me.svg";
 
 export default function About() {
   return (
@@ -11,7 +12,7 @@ export default function About() {
         transition={{ type: "spring", stiffness: 80, damping: 10 }}
         viewport={{ once: true }}
       >
-        <img src="/assets/about-me.svg" alt="About Me Illustration" />
+        <img src={AboutMeImg} alt="About Me Illustration" />
       </motion.div>
 
       <motion.div

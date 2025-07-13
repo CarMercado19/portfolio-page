@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { TbDownload } from "react-icons/tb";
 import { HiOutlineMenu, HiX } from "react-icons/hi";
 import { VscTerminalCmd } from "react-icons/vsc";
+import Resume from "../../public/resume.pdf";
 
 export default function Navbar() {
   const [hasShadow, setHasShadow] = useState(false);
@@ -65,7 +66,7 @@ export default function Navbar() {
         </ul>
 
         <motion.a
-          href="/resume.pdf"
+          href={Resume}
           download
           className="hidden relative lg:inline-block px-4 py-2 font-medium group"
         >
@@ -114,7 +115,7 @@ export default function Navbar() {
                 </motion.li>
               ))}
               <motion.a
-                  href="/resume.pdf"
+                  href={Resume}
                   download
                   className="relative inline-block px-4 py-2 font-semibold group"
                   whileHover={{ scale: 1.1 }}

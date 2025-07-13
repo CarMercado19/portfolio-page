@@ -1,19 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import HDUSImg from "../../public/assets/home-depot-store.png";
+import PGJEHImg from "../../public/assets/pgjeh.png";
 
 const projects = [
   {
     id: 1,
     title: "Home Depot EE.UU.",
     description: "As a contractor through Eviden, I helped develop and maintain internal web applications using React.js, Material UI, and Express.js. I focused on creating responsive UIs, integrating RESTful APIs, and managing deployments on Google Cloud Platform. I collaborated with cross-functional teams to ensure performance, scalability, and clean code practices.",
-    image: "/assets/home-depot-store.png",
+    image: HDUSImg,
     link: "#"
   },
   {
     id: 2,
     title: "Appointments for crime reports",
     description: "I participated in the development of web-based tools designed to streamline internal processes within a public institution. Using technologies like HTML, CSS, and JavaScript, I helped build and enhance user-facing modules that improved efficiency in daily tasks. The focus was on usability, performance optimization, and adapting existing systems to better serve operational needs in a government environment.",
-    image: "/assets/pgjeh.png",
+    image: PGJEHImg,
     link: "#"
   }
 ];

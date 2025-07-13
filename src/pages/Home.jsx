@@ -4,6 +4,7 @@ import { IoLogoLinkedin } from "react-icons/io5";
 import { BiLogoGmail } from "react-icons/bi";
 import { BsGithub } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
+import ProfileImg from "../../public/assets/hero-vector.svg";
 
 export default function Home() {
   const socialLinks = [
@@ -107,7 +108,7 @@ export default function Home() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <img className="h-full w-full" src="/assets/hero-vector.svg" alt="Hero Vector" />
+          <img className="h-full w-full" src={ProfileImg} alt="Hero Vector" />
         </motion.div>
       </div>
     </div>

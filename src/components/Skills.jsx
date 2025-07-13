@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { FaJs, FaReact, FaNodeJs, FaJenkins, FaGitAlt } from "react-icons/fa";
 import { SiExpress, SiGithubactions, SiJest, SiMaterialdesign  } from "react-icons/si";
 import { DiGoogleCloudPlatform } from "react-icons/di";
+import EvidenImg from "../../public/assets/eviden.png";
+import ScaleImg from "../../public/assets/scale.png";
 
 export default function Skills() {
   const [skills] = useState([
@@ -26,7 +28,7 @@ export default function Skills() {
       period: "Nov 2021 - Apr 2025",
       description:
         "Worked as a contractor for HomeDepot, contributing as a full stack developer. I used technologies such as React for the frontend and Express.js for the backend, focusing on building and maintaining scalable and maintainable web applications. I brought strong problem-solving skills, clean code practices, and a collaborative mindset that helped streamline development processes and improve overall code quality within the team.",
-      logo: "/assets/eviden.png",
+      logo: EvidenImg,
     },
     {
       id: 2,
@@ -35,7 +37,7 @@ export default function Skills() {
       period: "Jul - Oct 2021",
       description:
         "Contributed as a web developer, working with technologies such as HTML, CSS and JavaScript. I focused on maintaining and improving internal systems to support administrative processes. My contributions included implementing cleaner, more efficient code and streamlining workflows, which helped improve usability and performance across several internal tools.",
-      logo: "/assets/scale.png",
+      logo: ScaleImg,
     },
   ]);
 
