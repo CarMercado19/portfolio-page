@@ -1,12 +1,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import AboutMeImg from "../../public/assets/about-me.svg";
+import AboutMeImg from "../../public/assets/about-me.png";
 
 export default function About() {
   return (
     <div className="px-5 lg:px-28 flex justify-between flex-col lg:flex-row" id="about">
       <motion.div
-        className="lg:w-1/2"
+        className="lg:w-[30%]"
         initial={{ opacity: 0, x: -50 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ type: "spring", stiffness: 80, damping: 10 }}
